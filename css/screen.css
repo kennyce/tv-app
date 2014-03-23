@@ -1,0 +1,67 @@
+body,td,th {
+	color: #F00;
+}
+body {
+	background-color: #CCC;
+	text-align: center;
+	vertical-align: middle;
+	position: relative;
+	overflow: auto;
+	filter: FlipV;
+	color: #000;
+	background-image: url(img/original.jpg);
+	background-position: center center;
+}
+
+table,th,td
+{
+border:none;
+border-collapse:collapse;
+}
+
+#messages {
+	font-size: x-large;
+	text-decoration: none;
+	background-color:gray;
+	background-position: center center;
+	padding: 10px;
+	list-style-type: none;
+	filter: Light;
+	visibility: visible;
+	position: relative;
+	/*font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;*/
+	font-family: Gill Sans / Gill Sans MT, sans-serif;
+	font-weight: bolder;
+	vertical-align: middle;
+	text-align: center;
+	/*border: 10px solid #FFF;*/
+	margin: 20px;
+}
+#messages ul {
+	list-style-type: none;
+	list-style-position: inside;
+	position: relative;
+	overflow: hidden;
+}
+.msgContainer {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	border: 5px groove #FFF;
+	border-radius: 25px;
+	background-color: white;
+}
+.msgContainer #sender {
+	color: #03F;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.msgContainer #time {
+	color: white;
+	text-align: right;
+}
+.msgContainer #mess {
+	font-size: xx-large;
+	font-weight: bolder;
+	color: black;
+}

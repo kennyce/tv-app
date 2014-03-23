@@ -1,0 +1,6 @@
+var app = app || {};
+app.MessageList = Backbone.Collection.extend({
+model: app.Message,url:'http://127.0.0.1:5000/tvapi'
+});
+
+

@@ -1,0 +1,11 @@
+var app = app || {};
+
+app.msgView = Backbone.View.extend({
+tagName: 'div',
+className: 'msgContainer',
+template: _.template( $('#msgTemplate').html() ),
+render: function() {
+	this.$el.html( this.template( this.model.toJSON() ));
+	return this;
+}
+});
