@@ -7,66 +7,79 @@ body {
 	vertical-align: middle;
 	position: relative;
 	overflow: auto;
-	filter: FlipV;
 	color: #000;
 	background-image: url(img/original.jpg);
 	background-position: center center;
+	
 }
 
-table,th,td
+table td
 {
-border:1px solid black;
-border-collapse:collapse;
+border-top-style: none;
+border-right-style: none;
+border-bottom-style: none;
+border-left-style: none;
+text-align:center;
+border-radius: 25px;
 }
 
-table
-{
-	width:300px;
-}
-  
+/*table #ts{
+			width:10%;			
+			}
+table #tm{
+			width:60%;			
+			}
+table #tt{
+			width:30%;
+		}
+		
+*/
 #messages {
 	font-size: x-large;
 	text-decoration: none;
-	background-color:gray;
 	background-position: center center;
-	padding: 10px;
+	border-radius: 10px;
+	padding: 0px;
 	list-style-type: none;
 	filter: Light;
 	visibility: visible;
 	position: relative;
-	/*font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;*/
-	font-family: Gill Sans / Gill Sans MT, sans-serif;
+	font-family: Lucida Sans Unicode / Lucida Grande, sans-serif;
+	/*font-family: Gill Sans / Gill Sans MT, sans-serif;*/
 	font-weight: bolder;
 	vertical-align: middle;
 	text-align: center;
 	/*border: 10px solid #FFF;*/
 	margin: 20px;
+	background-color:yellow;
 }
-#messages ul {
+/*#messages ul {
 	list-style-type: none;
 	list-style-position: inside;
 	position: relative;
 	overflow: hidden;
-}
+}*/
 .msgContainer {
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	border: 5px groove #FFF;
-	border-radius: 25px;
+	/*font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;*/
+	/*border-radius: 25px;*/
 	background-color: white;
+	text-align: center;
+
 }
-.msgContainer #sender {
+.msgContainer #sender{
 	color: #03F;
-	border-top-style: none;
-	border-right-style: none;
-	border-bottom-style: none;
-	border-left-style: none;
+	vertical-align:top;
+	text-align: center;
 }
 .msgContainer #time {
-	color: white;
-	text-align: right;
+	color: green;
+	text-align: center;
+	vertical-align:top;
 }
 .msgContainer #mess {
 	font-size: xx-large;
 	font-weight: bolder;
+	text-align: center;
 	color: black;
-}
+	vertical-align:top;
+	}

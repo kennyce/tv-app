@@ -7,13 +7,9 @@
 </head>
 <body>
 <script id="msgTemplate" type="text/template">
-<table>
-<tr>
-	<td><span id="sender"><%= sender %></span></td>
-	<td>said </td><td><span id="mess"><%= message %></span> </td>
-	<td><span id="time"> <%= time %> </span></td>
-</tr>
-</table>
+	<td class="ts"><span id="sender"><%= sender %></span></td>
+	<td class ="tm"></td><td><span id="mess"><%= message %></span> </td>
+	<td class ="tt"><span id="time"> <%= time %> </span></td>
 </script>
 <script src="js/lib/jquery-1.11.0.js"></script>
 <script src="js/lib/underscore.js"></script>
@@ -24,10 +20,13 @@
 <script src="js/views/messages.js"></script>
 <script src="js/app.js"></script>
 
-<div id="messages">
-</div>
+<table cellspacing="4px" id="messages" border="0" width="90%">
 
-<div id="msgContainer">
+</table>
+
+<tr id="msgContainer">
+</tr>
+<div id="messagees">
 </div>
 
 
